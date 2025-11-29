@@ -1,0 +1,124 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d1a2b;
+  color: white;
+}
+
+.course-card {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.course-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.course-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.course-text {
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.btn-custom {
+  background: white;
+  color: #0d1a2b;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #ffc107;
+  color: black;
+}
+
+.testimonials-section {
+  background: #cfd2dc;
+  color: #0d1a2b;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 900px;
+  margin: auto;
+}
+
+.testimonial-author {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.arrow-btn {
+  width: 80px;
+  opacity: 1;
+}
+
+.carousel-arrow {
+  font-size: 48px;
+  color: #000;
+  font-weight: bold;
+}
+
+.fade-animation .carousel-item {
+  transition: opacity 1s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .course-card {
+    height: 430px;
+  }
+  .course-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    height: 380px;
+  }
+  .testimonial-text {
+    font-size: 22px;
+  }
+  .carousel-arrow {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card {
+    height: 330px;
+  }
+  .course-overlay {
+    padding: 25px;
+  }
+  .course-title {
+    font-size: 22px;
+  }
+  .testimonial-text {
+    font-size: 20px;
+  }
+}
